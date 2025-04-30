@@ -1,0 +1,12 @@
+/*Cor de fundo*/
+body{
+    text-align: center;
+    background-color: black;
+}
+
+/*Cor das letras*/
+.titulo_principal{
+    /* color: palegreen;  */
+    color: #46CC6B;
+}
+

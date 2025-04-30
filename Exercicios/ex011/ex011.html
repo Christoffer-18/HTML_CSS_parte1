@@ -9,9 +9,47 @@
     <h1>Imagens dinâmica</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
     <picture>
-        <source media="(min-width: 800px)" srcset="">
-        <source media="(min-width:)">
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
         <img src="Imagens/foto-g.png" alt="Imagem grande">
     </picture>
+    <br>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HMTL</p>
+    <!-- Usando o source, para quando quiser colocar mais de um formato, mas usado em projetos maiores-->
+    <audio preload="metadata" controls>
+        <source src="midia/wiu_fumei_a_arvore_de_natal.mp3" type="audio/mpeg">
+        <source src="midia/wiu_fumei_a_arvore_de_natal.ogg" type="audio/ogg">
+        <source src="midia/wiu_fumei_a_arvore_de_natal.wav" type="audio/wac">
+        <p>
+            infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/wiu_fumei_a_arvore_de_natal.mp3"> clique aqui para baixar o</a>
+        </p>
+      </audio>
+
+    <!-- <p>
+        Usando o src direto na tag audio, para quando quiser algo mais direto e que você já sabe a extensão que o navegador aceita, normalmete usado em projeos menores
+        <audio src="midia/wiu_fumei_a_arvore_de_natal.mp3" controls></audio>
+    </p>-->
+    <br>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedadp o meu próprio servidor.</p>
+     <!-- Usando o src direto na tag video, para quando quiser algo mais direto e que você já sabe a extensão que o navegador aceita, normalmete usado em projeos menores-->
+    <!-- <video src="video/meu_video.mp4" width="500" controls >tese</video> -->
+    <!-- Usando o source, para quando quiser colocar mais de um formato, mas usado em projetos maiores-->
+    <video controls width="615" autoplay loop>
+        <source src="video/meu_video.mp4" type="video/mp4">
+        <!--Aqui teria mais tag source, mas não converti o vídeo para outros formantos.-->
+        <p>
+            Infelizmente seu navegador não tem compatibilidade com reprodução de vídeos.
+        </p>
+    </video>
+    <br>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="615" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=HYLHdHxb5_0fALW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <h1>Inserindo vídeos do vimeo</h1>
+    <div style="padding:52.4% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/554780351?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Anime transition #anime"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+    
 </body>
 </html>
